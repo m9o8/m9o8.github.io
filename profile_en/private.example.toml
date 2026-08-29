@@ -1,0 +1,28 @@
+# Template for the real, private CV data. Copy this file to
+# `private.toml` (already gitignored — see .gitignore) in this same
+# folder and fill in real values. `private.toml` must never be committed.
+#
+# Used only when compiling locally with:
+#   typst compile cv.typ --input variant=private --font-path assets/fonts output/cv-en-full.pdf
+#
+# [info] fields are merged over profile_en/metadata.toml's [personal.info]
+# for the full PDF (email/phone are added, location overrides the public
+# city-only value with the real street address).
+#
+# [[references]] entries are looked up by `key` from profile_en/professional.typ
+# and only rendered when variant = "private".
+
+[info]
+    email = "you@example.com"
+    phone = "+00 000 0000000"
+    location = "Street, ZIP City"
+
+[[references]]
+    key = "ecb_current"
+    name = "Full Name"
+    title = "Job title, Organisation"
+
+[[references]]
+    key = "econai"
+    name = "Full Name"
+    title = "Job title, Organisation"

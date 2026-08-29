@@ -1,0 +1,47 @@
+#:schema ../metadata.toml.schema.json
+
+# Profile: English (preferred/default). This file holds only public-safe
+# data — no email, phone, or street address. Those live in the gitignored
+# profile_en/private.toml, overlaid only for local full-PDF builds
+# (`typst compile cv.typ --input variant=private`). See private.example.toml.
+
+cv_footer = "Curriculum Vitae"
+
+[layout]
+    awesome_color = "concrete"
+    before_section_skip = "1pt"
+    before_entry_skip = "1pt"
+    before_entry_description_skip = "1pt"
+    paper_size = "a4"
+    date_width = "3.6cm"
+
+    [layout.fonts]
+        regular_fonts = ["Source Sans 3"]
+        header_font = "Roboto"
+
+    [layout.header]
+        header_align = "left"
+        display_profile_photo = false
+        info_font_size = "10pt"
+
+    [layout.entry]
+        # No real company logos available/appropriate to bundle — keep entries plain text.
+        display_entry_society_first = true
+        display_logo = false
+
+    [layout.section]
+        title_highlight = "first-letters"
+        title_highlight_letters = 3
+
+    [layout.footer]
+        display_page_counter = true
+        display_footer = true
+
+[personal]
+    first_name = "Moritz"
+    last_name = "Peist"
+
+    [personal.info]
+        github = "m9o8"
+        linkedin = "moritz-p"
+        location = "Frankfurt am Main, Germany"

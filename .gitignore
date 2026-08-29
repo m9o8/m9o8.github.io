@@ -1,0 +1,14 @@
+# Private CV data — real contact info & references, never committed.
+# Created locally from private.example.toml; see README.md.
+profile_*/private.toml
+
+# Source Word/PDF CV — contains full home address & phone, kept local only.
+Current CVs/
+
+# Local build output (full/private PDF variant and scratch compiles).
+output/
+*.pdf
+!assets/**/*.pdf
+
+# 
+.claude/

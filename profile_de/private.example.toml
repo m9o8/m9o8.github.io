@@ -1,0 +1,21 @@
+# Vorlage für die echten, privaten Lebenslauf-Daten. Diese Datei nach
+# `private.toml` kopieren (bereits in .gitignore eingetragen) und mit den
+# echten Werten befüllen. `private.toml` darf niemals committet werden.
+#
+# Nur relevant für den lokalen Build:
+#   typst compile cv.typ --input profile=de --input variant=private --font-path assets/fonts output/cv-de-full.pdf
+
+[info]
+    email = "du@beispiel.de"
+    phone = "+00 000 0000000"
+    location = "Straße, PLZ Stadt"
+
+[[references]]
+    key = "ecb_current"
+    name = "Vollständiger Name"
+    title = "Position, Organisation"
+
+[[references]]
+    key = "econai"
+    name = "Vollständiger Name"
+    title = "Position, Organisation"
