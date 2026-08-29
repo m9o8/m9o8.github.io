@@ -21,8 +21,10 @@
     key = "ecb_current"
     name = "Full Name"
     title = "Job title, Organisation"
+    email = "you@example.com"
 
 [[references]]
     key = "econai"
     name = "Full Name"
     title = "Job title, Organisation"
+    email = "you@example.com"

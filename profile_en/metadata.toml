@@ -8,12 +8,12 @@
 cv_footer = "Curriculum Vitae"
 
 [layout]
-    awesome_color = "concrete"
+    awesome_color = "#173F5C"
     before_section_skip = "1pt"
     before_entry_skip = "1pt"
     before_entry_description_skip = "1pt"
     paper_size = "a4"
-    date_width = "3.6cm"
+    date_width = "5cm"
 
     [layout.fonts]
         regular_fonts = ["Source Sans 3"]
@@ -30,8 +30,7 @@ cv_footer = "Curriculum Vitae"
         display_logo = false
 
     [layout.section]
-        title_highlight = "first-letters"
-        title_highlight_letters = 3
+        title_highlight = "full"
 
     [layout.footer]
         display_page_counter = true

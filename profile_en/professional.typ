@@ -15,7 +15,12 @@
   let matches = references.filter(r => r.key == key)
   if matches.len() > 0 {
     let r = matches.first()
-    [Reference: #r.name -- #r.title]
+    let name = if r.at("email", default: "") != "" {
+      link("mailto:" + r.email)[#r.name]
+    } else {
+      r.name
+    }
+    [Reference: #name -- #r.title]
   } else {
     none
   }
@@ -71,7 +76,7 @@
   location: [Berlin, Germany],
   description: bullets(
     [Impact evaluation \& monitoring of the GIZ project OurVillage, implementing a blockchain-based transaction system in Cameroon, preparation of conferences and research papers],
-    [Project(s): researched and drafted input for two published working papers],
+    [Project(s): researched and drafted input for two published working papers (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1] \& #link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
   ),
 )
 
