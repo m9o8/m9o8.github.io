@@ -10,5 +10,6 @@ output/
 *.pdf
 !assets/**/*.pdf
 
-# 
+# Claude related files (local only, not committed)
 .claude/
+CLAUDE.md
