@@ -5,7 +5,7 @@
 #cv-section("Education")
 
 #cv-entry(
-  title: [Data Science (MSc)],
+  title: [Data Science for Decision Making (MSc)],
   society: [Barcelona School of Economics],
   date: [09/2024 -- 07/2025],
   location: [Barcelona, Spain],

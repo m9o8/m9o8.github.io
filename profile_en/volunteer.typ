@@ -6,7 +6,7 @@
 
 #cv-entry(
   title: [Buddy, "weltwärts Süd-Nord" Program],
-  society: [],
+  society: [IJGD],
   date: [09/2018 -- 01/2019],
   location: [Berlin, Germany],
   description: list(
@@ -15,8 +15,8 @@
 )
 
 #cv-entry(
-  title: [Development Policy Voluntary Service (weltwärts, IJGD)],
-  society: [],
+  title: [Development Policy Voluntary Service],
+  society: [weltwärts, IJGD],
   date: [09/2016 -- 08/2017],
   location: [Kpalimé, Togo],
   description: list(

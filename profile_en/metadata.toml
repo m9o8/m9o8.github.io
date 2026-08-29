@@ -41,6 +41,6 @@ cv_footer = "Curriculum Vitae"
     last_name = "Peist"
 
     [personal.info]
+        location = "Frankfurt am Main, Germany"
         github = "m9o8"
         linkedin = "moritz-p"
-        location = "Frankfurt am Main, Germany"
