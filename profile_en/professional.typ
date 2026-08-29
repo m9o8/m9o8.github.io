@@ -1,5 +1,6 @@
 // Imports
 #import "@preview/brilliant-cv:4.1.0": cv-entry, cv-section, h-bar
+#import "../utils/timeline.typ": cv-entry-timeline
 
 // Reference lines (referee name + title) are private data. They only exist
 // in the gitignored private.toml and are only pulled in for a local build
@@ -31,12 +32,12 @@
 #cv-section("Professional Experience")
 
 #cv-entry(
-  title: [DG-SPL/ISO Analyst],
+  title: [Supervision Analyst],
   society: [European Central Bank],
   date: [01/2026 -- ongoing],
   location: [Frankfurt am Main, Germany],
   description: bullets(
-    [Strategic Team, responsible for all data across the SSM LSI landscape (1,800 institutions)],
+    [DG-SPL/ISO Strategic Team, responsible for all data across the SSM LSI landscape (1,800 institutions)],
     [Development of data visualization tools for banking statistics (e.g. Outlier Monitoring in Tableau and Financial Deterioration dashboard in Power BI) for policy recommendations],
     [Project(s): LSI Early Warning System for Financial Deterioration cases using boosted trees (Azure ML), LSI Profitability deep dive, LSI Liquidity Funding Plan assessments],
     ref-line("ecb_current"),
@@ -56,18 +57,26 @@
   ),
 )
 
-#cv-entry(
-  title: [Trainee, Analyst],
+#cv-entry-timeline(
   society: [European Central Bank],
-  date: [07/2023 -- 09/2024],
   location: [Frankfurt am Main, Germany],
-  description: bullets(
-    [DG-SPL/ISO Traineeship (07/2023 -- 06/2024) \& Supervision Analyst (07/2024 -- 09/2024)],
-    [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established the division's GitLab],
-    [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
-    [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
+  roles: (
+    (
+      title: [Supervision Analyst],
+      date: [07/2024 -- 09/2024],
+      description: bullets(
+        [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established the division's GitLab],
+        [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
+        [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
+      ),
+    ),
+    (
+      title: [DG-SPL/ISO Trainee],
+      date: [07/2023 -- 06/2024],
+    ),
   ),
 )
+
 
 #cv-entry(
   title: [Student Research Assistant],
@@ -90,15 +99,22 @@
   ),
 )
 
-#cv-entry(
-  title: [Intern, Working Student -- Finance],
+#cv-entry-timeline(
   society: [Solarisbank AG],
-  date: [07/2020 -- 03/2022],
   location: [Berlin, Germany],
-  description: bullets(
-    [Finance Intern (07/2020 -- 01/2021) \& Finance Working Student (01/2021 -- 03/2022)],
-    [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
-    [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
+  roles: (
+    (
+      title: [Finance Working Student],
+      date: [01/2021 -- 03/2022],
+      description: bullets(
+        [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
+        [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
+      ),
+    ),
+    (
+      title: [Finance Intern],
+      date: [07/2020 -- 01/2021],
+    ),
   ),
 )
 
