@@ -22,8 +22,11 @@
 #let metadata = if variant == "private" {
   let private-data = toml(profile-dir + "private.toml")
   let merged-info = base-metadata.personal.info + private-data.info
-  base-metadata + (
-    personal: base-metadata.personal + (info: merged-info),
+  (
+    base-metadata
+      + (
+        personal: base-metadata.personal + (info: merged-info),
+      )
   )
 } else {
   base-metadata
@@ -107,11 +110,16 @@
   let ref-one = measure(text(size: font-size)[Ag]).height
   let ref-two = measure(text(size: font-size)[Ag #linebreak() Ag]).height
   let increment = ref-two - ref-one
-  calc.max(1, int(1 + calc.round((wrapped-height - one-line-height) / increment)))
+  calc.max(1, int(
+    1 + calc.round((wrapped-height - one-line-height) / increment),
+  ))
 }
 
 #let smart-header-info = layout(container => context {
-  let font-size = eval(metadata.layout.header.at("info_font_size", default: "10pt"))
+  let font-size = eval(metadata.layout.header.at(
+    "info_font_size",
+    default: "10pt",
+  ))
   let row = text(size: font-size, info-row(metadata.personal.info))
   let lines = count-lines(row, container.width, font-size)
   align(if lines > 2 { center } else { left }, box(width: container.width, row))

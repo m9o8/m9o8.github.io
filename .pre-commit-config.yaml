@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: typstyle
+        name: typstyle
+        description: Format Typst files with typstyle
+        entry: typstyle
+        language: system
+        files: \.typ$
+        args: ["-i"]

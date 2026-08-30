@@ -10,7 +10,7 @@
   date: [09/2024 -- 07/2025],
   location: [Barcelona, Spanien],
   description: list(
-    [Data Science for Decision Making, verliehen durch die Universitat Pompeu Fabra und die Universitat Autònoma de Barcelona -- Notendurchschnitt 9,33/10 (≈ A), bester Student des Jahrgangs (1./24)],
+    [Verliehen durch die Universitat Pompeu Fabra und die Universitat Autònoma de Barcelona -- Notendurchschnitt 9,33/10 (≈ A), bester Student des Jahrgangs (1./24)],
     [Kursinhalte: (Finanz-)Ökonometrie #h-bar() Causal Inference \& Machine Learning #h-bar() Big Data Management #h-bar() Geospatial Data Science #h-bar() Networks: Concepts and Theory #h-bar() Advanced NLP],
     [Abschlussarbeit: „#link("http://hdl.handle.net/10230/72075")[Folk Around and Find Out: Algorithmic Collusion and the Limits of Coordination]" -- Note 10/10 (≈ A+), beste Arbeit des Jahrgangs, veröffentlicht im Best-Theses-Repository der UPF],
   ),

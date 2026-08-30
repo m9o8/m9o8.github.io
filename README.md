@@ -42,6 +42,26 @@ typst compile cv.typ output/cv-en-full.pdf --font-path assets/fonts --input prof
 typst compile cv.typ output/cv-de-full.pdf --font-path assets/fonts --input profile=de --input variant=private
 ```
 
+## Formatting
+
+`.typ` files are formatted with [typstyle](https://github.com/typstyle-rs/typstyle)
+(pinned to `0.15.1`, matching the Typst version). Install it once
+(`winget install Enter-tainer.typstyle` on Windows, `cargo install typstyle
+--locked`, or a prebuilt binary from its
+[releases](https://github.com/typstyle-rs/typstyle/releases)) and it must be
+on `PATH` as `typstyle`.
+
+This repo uses [pre-commit](https://pre-commit.com/) to run it automatically
+on commit:
+
+```sh
+pip install pre-commit   # once, if you don't already have it
+pre-commit install       # once per clone
+```
+
+To format everything by hand: `pre-commit run typstyle --all-files` (or
+`typstyle -i <file>` directly).
+
 ## Published site
 
 Once this repo is renamed to `m9o8.github.io`, made public, and Pages is

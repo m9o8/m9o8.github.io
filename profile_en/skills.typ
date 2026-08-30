@@ -49,5 +49,5 @@
 #cv-skill(
   type-width: 27%,
   type: [Open-Source],
-  info: [#link("https://github.com/4Freye/panelsplit")[Panelsplit] -- Python, DataFrame agnosticism #h-bar() #link("https://github.com/Daniel-Pailanir/sdid")[sdid] -- Stata, bug fixes],
+  info: [#link("https://github.com/4Freye/panelsplit")[Panelsplit] -- Python for panel data cross-validation],
 )

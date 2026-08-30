@@ -10,12 +10,32 @@
 #let accent-color = rgb(toml("metadata.toml").layout.awesome_color)
 
 #let certs = (
-  (title: [Innovation \& AI], issuer: [European Central Bank / INSEAD], date: [05/2024]),
-  (title: [AI Programming with Python], issuer: [Bertelsmann Tech Scholarship], date: [05/2024]),
-  (title: [Predictive Analytics for Business], issuer: [Bertelsmann Tech Scholarship], date: [11/2021]),
-  (title: [Distributed Computing with Spark], issuer: [UC Davis], date: [02/2021]),
+  (
+    title: [Innovation \& AI],
+    issuer: [European Central Bank / INSEAD],
+    date: [05/2024],
+  ),
+  (
+    title: [AI Programming with Python],
+    issuer: [Bertelsmann Tech Scholarship],
+    date: [05/2024],
+  ),
+  (
+    title: [Predictive Analytics for Business],
+    issuer: [Bertelsmann Tech Scholarship],
+    date: [11/2021],
+  ),
+  (
+    title: [Distributed Computing with Spark],
+    issuer: [UC Davis],
+    date: [02/2021],
+  ),
   (title: [Digitalization \& Sustainability], issuer: [FSEGT], date: [03/2022]),
-  (title: [Introduction to Portfolio Construction and Analysis with Python], issuer: [EDHEC], date: [08/2020]),
+  (
+    title: [Introduction to Portfolio Construction and Analysis with Python],
+    issuer: [EDHEC],
+    date: [08/2020],
+  ),
 )
 
 #let cert-card(cert) = [

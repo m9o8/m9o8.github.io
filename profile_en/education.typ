@@ -10,7 +10,7 @@
   date: [09/2024 -- 07/2025],
   location: [Barcelona, Spain],
   description: list(
-    [Data Science for Decision Making, awarded by Universitat Pompeu Fabra and Universitat Autònoma de Barcelona -- GPA 9.33/10 (≈ A), best student in the cohort (1st/24)],
+    [Awarded by Universitat Pompeu Fabra and Universitat Autònoma de Barcelona -- GPA 9.33/10 (≈ A), best student in the cohort (1st/24)],
     [Coursework: (Financial) Econometrics #h-bar() Causal Inference \& Machine Learning #h-bar() Big Data Management #h-bar() Geospatial Data Science #h-bar() Networks: Concepts and Theory #h-bar() Advanced NLP],
     [Thesis: "#link("http://hdl.handle.net/10230/72075")[Folk Around and Find Out: Algorithmic Collusion and the Limits of Coordination]" -- Grade 10/10 (≈ A+), best in cohort, published in the UPF repository of best theses],
   ),
