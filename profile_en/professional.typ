@@ -13,6 +13,13 @@
 } else {
   ()
 }
+// Styled in the accent color (as brilliant-cv's own cv-honor location text
+// is) and slanted, so a reference reads as a distinct, slightly emphasized
+// aside rather than another plain bullet. The slant is faked with skew()
+// rather than text(style: "italic"): the bundled Source Sans 3 file has no
+// italic face, and Typst drops an unmatched style silently instead of
+// synthesizing one, so a real italic face would need a whole new font asset.
+#let accent-color = rgb(toml("metadata.toml").layout.awesome_color)
 #let ref-line(key) = {
   let matches = references.filter(r => r.key == key)
   if matches.len() > 0 {
@@ -22,7 +29,15 @@
     } else {
       r.name
     }
-    [Reference: #name -- #r.title]
+    skew(
+      ax: -10deg,
+      reflow: true,
+      text(
+        weight: "medium",
+        fill: accent-color,
+        [Reference: #name -- #r.title],
+      ),
+    )
   } else {
     none
   }
@@ -62,6 +77,11 @@
   society: [European Central Bank],
   location: [Frankfurt am Main, Germany],
 )
+// cv-entry-start/-continued space the company header from the first role's
+// title using `before_entry_skip` (tuned tight, -2pt, to keep gaps between
+// separate entries compact), whereas a plain cv-entry uses a fixed 6pt
+// row-gutter for that same company/title gap. Nudge it back to match.
+#v(3.5pt)
 #cv-entry-continued(
   title: [Supervision Analyst],
   date: [07/2024 -- 09/2024],
@@ -102,6 +122,7 @@
   society: [Solarisbank AG],
   location: [Berlin, Germany],
 )
+#v(3.5pt)
 #cv-entry-continued(
   title: [Finance Working Student],
   date: [01/2021 -- 03/2022],

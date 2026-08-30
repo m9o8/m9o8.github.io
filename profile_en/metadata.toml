@@ -15,7 +15,7 @@ cv_footer = "Curriculum Vitae"
     before_entry_skip = "-2pt"
     before_entry_description_skip = "-5pt"
     paper_size = "a4"
-    date_width = "5cm"
+    date_width = "5.8cm"
 
     # Overrides base font size for body text; affects overall density of content
     font_size = "9pt"
