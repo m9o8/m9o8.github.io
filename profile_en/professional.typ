@@ -1,6 +1,7 @@
 // Imports
-#import "@preview/brilliant-cv:4.1.0": cv-entry, cv-section, h-bar
-#import "../utils/timeline.typ": cv-entry-timeline
+#import "@preview/brilliant-cv:4.1.0": (
+  cv-entry, cv-entry-continued, cv-entry-start, cv-section, h-bar,
+)
 
 // Reference lines (referee name + title) are private data. They only exist
 // in the gitignored private.toml and are only pulled in for a local build
@@ -57,24 +58,22 @@
   ),
 )
 
-#cv-entry-timeline(
+#cv-entry-start(
   society: [European Central Bank],
   location: [Frankfurt am Main, Germany],
-  roles: (
-    (
-      title: [Supervision Analyst],
-      date: [07/2024 -- 09/2024],
-      description: bullets(
-        [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established the division's GitLab],
-        [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
-        [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
-      ),
-    ),
-    (
-      title: [DG-SPL/ISO Trainee],
-      date: [07/2023 -- 06/2024],
-    ),
+)
+#cv-entry-continued(
+  title: [Supervision Analyst],
+  date: [07/2024 -- 09/2024],
+  description: bullets(
+    [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established the division's GitLab],
+    [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
+    [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
   ),
+)
+#cv-entry-continued(
+  title: [DG-SPL/ISO Trainee],
+  date: [07/2023 -- 06/2024],
 )
 
 
@@ -99,23 +98,21 @@
   ),
 )
 
-#cv-entry-timeline(
+#cv-entry-start(
   society: [Solarisbank AG],
   location: [Berlin, Germany],
-  roles: (
-    (
-      title: [Finance Working Student],
-      date: [01/2021 -- 03/2022],
-      description: bullets(
-        [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
-        [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
-      ),
-    ),
-    (
-      title: [Finance Intern],
-      date: [07/2020 -- 01/2021],
-    ),
+)
+#cv-entry-continued(
+  title: [Finance Working Student],
+  date: [01/2021 -- 03/2022],
+  description: bullets(
+    [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
+    [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
   ),
+)
+#cv-entry-continued(
+  title: [Finance Intern],
+  date: [07/2020 -- 01/2021],
 )
 
 #cv-entry(

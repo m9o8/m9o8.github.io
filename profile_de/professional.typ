@@ -1,6 +1,7 @@
 // Imports
-#import "@preview/brilliant-cv:4.1.0": cv-entry, cv-section, h-bar
-#import "../utils/timeline.typ": cv-entry-timeline
+#import "@preview/brilliant-cv:4.1.0": (
+  cv-entry, cv-entry-continued, cv-entry-start, cv-section, h-bar,
+)
 
 // Referenzzeilen (Name + Titel) sind private Daten. Sie existieren nur in
 // der gitignorten private.toml und werden nur bei einem lokalen Build mit
@@ -57,24 +58,22 @@
   ),
 )
 
-#cv-entry-timeline(
+#cv-entry-start(
   society: [Europäische Zentralbank],
   location: [Frankfurt am Main, Deutschland],
-  roles: (
-    (
-      title: [Supervision Analyst],
-      date: [07/2024 -- 09/2024],
-      description: bullets(
-        [Institutionelle und sektorale Aufsicht, Identifikation von Hochrisiko- und Hochimpact-Banken, Code-Migration (von SAS zu Python \& SQL) und Optimierung, Aufbau des GitLab der Abteilung],
-        [Entwicklung \& Verbesserung von Datenextraktions-Pipelines aus Enterprise-Data-Lakes (Python, SQL, VBA, Excel-Datenmodell), Verbesserung der Berechnungszeiten um bis zu 300\%],
-        [Projekt(e): Optimierung eines BERT-Modells zur Identifikation von Cyberrisiken (PyTorch, LangChain), Entwicklung der LSI-SREP-Dateninfrastruktur zur Konsolidierung von vier Quellsystemen über 3.000 SSM-Banken seit 2014 mittels Python, SQL \& Excel mit 20 Millionen Datenpunkten (quartalsweise wachsend)],
-      ),
-    ),
-    (
-      title: [DG-SPL/ISO-Trainee],
-      date: [07/2023 -- 06/2024],
-    ),
+)
+#cv-entry-continued(
+  title: [Supervision Analyst],
+  date: [07/2024 -- 09/2024],
+  description: bullets(
+    [Institutionelle und sektorale Aufsicht, Identifikation von Hochrisiko- und Hochimpact-Banken, Code-Migration (von SAS zu Python \& SQL) und Optimierung, Aufbau des GitLab der Abteilung],
+    [Entwicklung \& Verbesserung von Datenextraktions-Pipelines aus Enterprise-Data-Lakes (Python, SQL, VBA, Excel-Datenmodell), Verbesserung der Berechnungszeiten um bis zu 300\%],
+    [Projekt(e): Optimierung eines BERT-Modells zur Identifikation von Cyberrisiken (PyTorch, LangChain), Entwicklung der LSI-SREP-Dateninfrastruktur zur Konsolidierung von vier Quellsystemen über 3.000 SSM-Banken seit 2014 mittels Python, SQL \& Excel mit 20 Millionen Datenpunkten (quartalsweise wachsend)],
   ),
+)
+#cv-entry-continued(
+  title: [DG-SPL/ISO-Trainee],
+  date: [07/2023 -- 06/2024],
 )
 
 #cv-entry(
@@ -98,23 +97,21 @@
   ),
 )
 
-#cv-entry-timeline(
+#cv-entry-start(
   society: [Solarisbank AG],
   location: [Berlin, Deutschland],
-  roles: (
-    (
-      title: [Werkstudent Finance],
-      date: [01/2021 -- 03/2022],
-      description: bullets(
-        [Core-Banking-Transformationsprogramm, Prozessautomatisierung \& -optimierung (VBA \& SQL)],
-        [Finanzberichterstattung \& Forecasting (insb. Bilanz), Ad-hoc-Reporting \& Modellierung],
-      ),
-    ),
-    (
-      title: [Finance-Praktikant],
-      date: [07/2020 -- 01/2021],
-    ),
+)
+#cv-entry-continued(
+  title: [Werkstudent Finance],
+  date: [01/2021 -- 03/2022],
+  description: bullets(
+    [Core-Banking-Transformationsprogramm, Prozessautomatisierung \& -optimierung (VBA \& SQL)],
+    [Finanzberichterstattung \& Forecasting (insb. Bilanz), Ad-hoc-Reporting \& Modellierung],
   ),
+)
+#cv-entry-continued(
+  title: [Finance-Praktikant],
+  date: [07/2020 -- 01/2021],
 )
 
 #cv-entry(
