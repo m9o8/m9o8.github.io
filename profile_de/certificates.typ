@@ -20,6 +20,14 @@
 )
 
 #cv-honor(
+  date: [03/2022],
+  title: [Digitalization \& Sustainability],
+  issuer: [FSEGT],
+  url: "",
+  location: [Hammamet, TN],
+)
+
+#cv-honor(
   date: [11/2021],
   title: [Predictive Analytics for Business],
   issuer: [Bertelsmann Tech Scholarship],
@@ -33,14 +41,6 @@
   issuer: [UC Davis],
   url: "https://coursera.org/share/92c85ad397a5da4b714e1f273726ab3b",
   location: [Online],
-)
-
-#cv-honor(
-  date: [03/2022],
-  title: [Digitalization \& Sustainability],
-  issuer: [FSEGT],
-  url: "",
-  location: [Hammamet, TN],
 )
 
 #cv-honor(
