@@ -12,13 +12,13 @@ cv_footer = "Curriculum Vitae"
 [layout]
     awesome_color = "#173F5C"
     before_section_skip = "0pt"
-    before_entry_skip = "-2pt"
-    before_entry_description_skip = "-5pt"
+    before_entry_skip = "-3pt"
+    before_entry_description_skip = "-6pt"
     paper_size = "a4"
     date_width = "5.8cm"
 
     # Overrides base font size for body text; affects overall density of content
-    font_size = "9pt"
+    font_size = "8.7pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans 3"]

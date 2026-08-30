@@ -112,7 +112,7 @@
 #import-modules((
   "education",
   "professional",
+  "volunteer",
   "skills",
   "certificates",
-  "volunteer",
 ))

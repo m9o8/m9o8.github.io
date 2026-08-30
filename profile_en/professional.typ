@@ -66,9 +66,9 @@
   date: [08/2025 -- 12/2025],
   location: [Barcelona, Spain],
   description: bullets(
-    [Institutional disruption team, building ML models predicting political violence and displacement using NLP pipelines for the German Federal Foreign Office],
+    [Institutional disruption team, building ML models predicting political violence using NLP pipelines for the German Federal Foreign Office],
     [Refactoring and rewriting of ML infrastructure, implementing MLOps pipelines using MLFlow and Prefect for automated model training and deployment, ensuring reproducibility and version control for research, improving runtimes from 2 days to 1 hour],
-    [Barcelona School of Economics: Teaching Assistant for a Master's-level Economics course],
+    [Barcelona School of Economics: Teaching Assistant for a Master's-level Microeconomics course (Economics for Decion Making)],
     ref-line("econai"),
   ),
 )
@@ -103,8 +103,8 @@
   date: [04/2022 -- 06/2023],
   location: [Berlin, Germany],
   description: bullets(
-    [Impact evaluation \& monitoring of the GIZ project OurVillage, implementing a blockchain-based transaction system in Cameroon, preparation of conferences and research papers],
-    [Project(s): researched and drafted input for two published working papers (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1] \& #link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
+    [Impact evaluation \& monitoring of the GIZ project OurVillage, implementing a blockchain-based transaction system in rural Cameroon],
+    [Project(s): researched and drafted input for a working paper (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1])  \& conference (#link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
   ),
 )
 
@@ -114,7 +114,7 @@
   date: [09/2022 -- 12/2022],
   location: [Bafoussam, Cameroon],
   description: bullets(
-    [Project management, survey design \& implementation in rural environments, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
+    [Project management, survey design \& implementation, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
   ),
 )
 
@@ -128,12 +128,14 @@
   date: [01/2021 -- 03/2022],
   description: bullets(
     [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
-    [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
   ),
 )
 #cv-entry-continued(
   title: [Finance Intern],
   date: [07/2020 -- 01/2021],
+  description: bullets(
+    [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
+  ),
 )
 
 #cv-entry(
