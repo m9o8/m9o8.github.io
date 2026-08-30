@@ -5,15 +5,20 @@
 # profile_en/private.toml, overlaid only for local full-PDF builds
 # (`typst compile cv.typ --input variant=private`). See private.example.toml.
 
+header_quote = "Data Scientist with 2 year public sector experience in central banking, financial regulation, and applied AI research. Skilled in Python, and SQL. Passionate about leveraging data to drive insights and innovation."
+
 cv_footer = "Curriculum Vitae"
 
 [layout]
     awesome_color = "#173F5C"
-    before_section_skip = "1pt"
-    before_entry_skip = "1pt"
-    before_entry_description_skip = "1pt"
+    before_section_skip = "0pt"
+    before_entry_skip = "-2pt"
+    before_entry_description_skip = "-5pt"
     paper_size = "a4"
     date_width = "5cm"
+
+    # Overrides base font size for body text; affects overall density of content
+    font_size = "9pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans 3"]
@@ -22,7 +27,7 @@ cv_footer = "Curriculum Vitae"
     [layout.header]
         header_align = "left"
         display_profile_photo = false
-        info_font_size = "10pt"
+        info_font_size = "8pt"
 
     [layout.entry]
         # No real company logos available/appropriate to bundle — keep entries plain text.
@@ -42,5 +47,10 @@ cv_footer = "Curriculum Vitae"
 
     [personal.info]
         location = "Frankfurt am Main, Germany"
+        # Empty placeholders keep this position in the merge order when
+        # profile_en/private.toml overlays real values for the full PDF --
+        # see cv.typ's merged-info logic. GitHub/LinkedIn should stay last.
+        email = ""
+        phone = ""
         github = "m9o8"
         linkedin = "moritz-p"

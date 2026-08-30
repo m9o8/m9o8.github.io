@@ -42,5 +42,10 @@ cv_footer = "Lebenslauf"
 
     [personal.info]
         location = "Frankfurt am Main, Deutschland"
+        # Empty placeholders keep this position in the merge order when
+        # profile_de/private.toml overlays real values for the full PDF --
+        # see cv.typ's merged-info logic. GitHub/LinkedIn should stay last.
+        email = ""
+        phone = ""
         github = "m9o8"
         linkedin = "moritz-p"

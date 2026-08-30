@@ -43,14 +43,11 @@
 // the profile's own accent color rather than a fixed one.
 #show link: it => text(fill: rgb(metadata.layout.awesome_color), it)
 
-// The header contact-info row (location, GitHub, LinkedIn, and -- in the
-// private variant -- email/phone) is left-aligned normally, but centered
-// once it wraps past two lines, so a longer row (e.g. the private-variant
-// build) doesn't end up ragged under the name. This rebuilds the row's
-// content itself (rather than styling brilliant-cv's built-in row) because
-// choosing an alignment requires measuring the rendered row first, and the
-// package always builds+places that row internally. It only covers the
-// plain `[personal.info]` keys this repo actually uses (location, github,
+// The header contact-info row (location, email, phone, GitHub, LinkedIn)
+// is centered under the name. This rebuilds the row's content itself
+// (rather than styling brilliant-cv's built-in row) because the package
+// always builds+places that row internally. It only covers the plain
+// `[personal.info]` keys this repo actually uses (location, github,
 // linkedin, email, phone) -- not the package's `custom-*` icon or manual
 // `linebreak` keys, since neither profile uses those.
 #let info-icons = (
@@ -97,38 +94,18 @@
   }
 }
 
-// Estimates the row's wrapped line count from two self-consistent
-// measurements of the SAME content (so icon glyphs are already accounted
-// for): its unconstrained (one-line) height, and its height at the real
-// container width. The per-line increment (line-height + paragraph
-// leading) is calibrated separately from a plain two-line reference at the
-// same font size, since a single unconstrained measurement can't reveal
-// the leading Typst inserts only *between* wrapped lines.
-#let count-lines(row, width, font-size) = {
-  let wrapped-height = measure(row, width: width).height
-  let one-line-height = measure(row, width: 1000cm).height
-  let ref-one = measure(text(size: font-size)[Ag]).height
-  let ref-two = measure(text(size: font-size)[Ag #linebreak() Ag]).height
-  let increment = ref-two - ref-one
-  calc.max(1, int(
-    1 + calc.round((wrapped-height - one-line-height) / increment),
-  ))
-}
-
-#let smart-header-info = layout(container => context {
+#let centered-header-info = context {
   let font-size = eval(metadata.layout.header.at(
     "info_font_size",
     default: "10pt",
   ))
-  let row = text(size: font-size, info-row(metadata.personal.info))
-  let lines = count-lines(row, container.width, font-size)
-  align(if lines > 2 { center } else { left }, box(width: container.width, row))
-})
+  align(center, text(size: font-size, info-row(metadata.personal.info)))
+}
 
 #show: cv.with(
   metadata,
   profile-photo: none,
-  header-info: smart-header-info,
+  header-info: centered-header-info,
 )
 
 // Add, remove, or reorder modules to customize CV content.
