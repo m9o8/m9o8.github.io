@@ -68,14 +68,18 @@
   phone: fa-phone(),
 )
 
+// Displays full "host.tld/handle" text (not just the bare handle) so the
+// link survives an ATS stripping images -- the header's little
+// GitHub/LinkedIn icons are otherwise the only thing disambiguating an
+// opaque handle like "m9o8" from plain text.
 #let info-link(k, v) = if k == "email" {
   link("mailto:" + v)[#v]
 } else if k == "linkedin" {
-  link("https://www.linkedin.com/in/" + v)[#v]
+  link("https://www.linkedin.com/in/" + v)[linkedin.com/in/#v]
 } else if k == "github" {
-  link("https://github.com/" + v)[#v]
+  link("https://github.com/" + v)[github.com/#v]
 } else if k == "gitlab" {
-  link("https://gitlab.com/" + v)[#v]
+  link("https://gitlab.com/" + v)[gitlab.com/#v]
 } else if k == "homepage" {
   link("https://" + v)[#v]
 } else if k == "orcid" {
@@ -133,6 +137,18 @@
     ..f.children,
   )
 }
+
+// brilliant-cv 4.1.0's entry-header tables (`columns: (1fr, date-width)`,
+// shared by cv-entry/-start/-continued since logos are off here) are
+// breakable by default -- a plain cv-entry nests its society/location and
+// title/date rows as a 2-row sub-table inside a single cell, which can
+// split across a page break (e.g. "mittemitte GmbH" stranded at a page
+// bottom with its role/date line starting the next page). Force every
+// match non-breakable so a header always moves to the next page as a
+// whole instead of splitting; the description/bullets below it are
+// unaffected and can still flow across a page break as normal.
+#let date-width = eval(metadata.layout.at("date_width", default: "3.6cm"))
+#show table.where(columns: (1fr, date-width)): it => block(breakable: false, it)
 
 #show: cv.with(
   metadata,

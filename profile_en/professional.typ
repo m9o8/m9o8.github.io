@@ -54,9 +54,8 @@
   location: [Frankfurt am Main, Germany],
   description: bullets(
     [Strategic Team: own data quality, analytics, and reporting across 1,800 SSM Less Significant Institutions, incl. drafting the "Structure of the LSI sector" chapter of the SSM supervision report & quarterly public LSI statistics],
-    [Migrated dashboards and data infrastructure from Excel to SQL/Python (Power BI, Tableau, Pandas to Polars)],
+    [Migrated and built dashboards and data infrastructure at scale in SQL/Python with user friendly output (Excel, Power BI, Tableau)],
     [Project(s): *RWA/CET1 capital impact* simulation tool for proposed risk-weighting simplifications #h-bar() *USD devaluation exposure* on LSI USD positions #h-bar() *LSI profitability deep-dive* #h-bar() LSI IT risk monitoring],
-    ref-line("ecb_current"),
   ),
 )
 
@@ -70,7 +69,6 @@
     [Processed millions of newspaper articles via LDA topic modeling and headline-embedding/few-shot pipelines to generate national and subnational (ADM2) conflict forecasts from UCDP/ACLED data],
     [Optimized runtimes across the stack: *MLOps pipelines* (Prefect) cut model training from 2 days to 1 hour #h-bar() *PostGIS geospatial joins* cut query time from 25 hours to 30 minutes],
     [Infrastructure: built a Python/PostgreSQL library (Jinja templates, DuckDB) implementing SCD2 versioning for ingested articles #h-bar() open-sourced a Narwhals dataframe-interoperability layer for the panelsplit library],
-    ref-line("econai"),
   ),
 )
 
@@ -95,16 +93,18 @@
 #v(3.5pt)
 #cv-entry-continued(
   title: [Supervision Analyst],
-  date: [07/2024 -- 09/2024],
+  date: [07/2023 -- 09/2024],
   description: bullets(
-    [Institutional and sectoral oversight: identified high-risk and high-impact Less Significant Institutions through targeted risk models; managed NCA communication via a Central Notification Point & curated the divion's internal konwledge-sharing],
-    [Developed \& improved data-extraction pipelines (Python, SQL, VBA, Excel), cutting calculation time by up to 300%],
-    [Project(s): *BERT-based cyber-risk detection* POC (PyTorch, LangChain, Azure ML) #h-bar() *LSI SREP data infrastructure* consolidating 3 source systems across 3,000 SSM banks since 2014 (20M+ rows) #h-bar() *SAS to Python/SQL migration* \& GitLab maintenance],
+    [Institutional and sectoral oversight: identified high-risk and high-impact Less Significant Institutions through targeted risk models; managed NCA communication via a Central Notification Point & curated the division's internal knowledge-sharing],
   ),
 )
 #cv-entry-continued(
   title: [DG-SPL/ISO Trainee],
   date: [07/2023 -- 06/2024],
+  description: bullets(
+    [Developed \& improved data-extraction pipelines (Python, SQL, VBA, Excel), cutting calculation time by up to 300%],
+    [Project(s): *BERT-based cyber-risk detection* POC (PyTorch, LangChain, Azure ML) #h-bar() *LSI SREP data infrastructure* consolidating 3 source systems across 3,000 SSM banks since 2014 (20M+ rows) #h-bar() *SAS to Python/SQL migration* \& GitLab maintenance],
+  ),
 )
 
 #cv-entry-start(

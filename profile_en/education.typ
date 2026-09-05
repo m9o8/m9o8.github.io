@@ -32,7 +32,7 @@
   date: [09/2019 -- 09/2021],
   location: [Lille, France],
   description: list(
-    [Minor: Finance -- GPA 16.05/20 (≈ A+), 2nd best IB track student (3rd \& 4th year)],
+    [Minor: Finance -- GPA 16.05/20 (≈ A+) #h-bar() 2nd best International Business track student in the 3rd \& 4th year],
   ),
 )
 

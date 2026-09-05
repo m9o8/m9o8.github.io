@@ -5,20 +5,24 @@
 # profile_en/private.toml, overlaid only for local full-PDF builds
 # (`typst compile cv.typ --input variant=private`). See private.example.toml.
 
-header_quote = "Data scientist and quantitative analyst bridging central-bank supervision, applied AI research, and finance operations; building production ML pipelines and decision-ready data infrastructure (Python, SQL) from large, messy institutional datasets."
+header_quote = "Data scientist and quantitative analyst bridging central-bank supervision, machine-learning, and finance operations; building robust, scalable data infrastructure and production AI pipelines (Python, SQL) from large, messy institutional datasets."
+# IO/policy-angle variant -- leads with international-organization and
+# policy experience instead of the technical stack. Swap in by hand (comment
+# the line above, uncomment this one) before compiling for IO applications.
+# header_quote = "Policy-oriented economist and data scientist with international-organization experience spanning central-bank supervision (ECB), applied conflict-forecasting research for a foreign ministry, and development fieldwork (GIZ); builds decision-ready data infrastructure and ML pipelines (Python, SQL) for institutional and policy audiences."
 
 cv_footer = "Curriculum Vitae"
 
 [layout]
     awesome_color = "#173F5C"
     before_section_skip = "-2pt"
-    before_entry_skip = "-2pt"
+    before_entry_skip = "-3pt"
     before_entry_description_skip = "-5pt"
     paper_size = "a4"
     date_width = "5.8cm"
 
     # Overrides base font size for body text; affects overall density of content
-    font_size = "9.4pt"
+    font_size = "9pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans 3"]
@@ -42,6 +46,7 @@ cv_footer = "Curriculum Vitae"
         display_footer = true
 
 [personal]
+    # display_name = "Moritz Peist"
     first_name = "Moritz"
     last_name = "Peist"
 

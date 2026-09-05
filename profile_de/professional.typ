@@ -56,7 +56,6 @@
     [DG-SPL/ISO Strategic Team, verantwortlich für sämtliche Daten der SSM-LSI-Landschaft (1.800 Institute)],
     [Entwicklung von Datenvisualisierungstools für Bankenstatistiken (u. a. Outlier Monitoring in Tableau und Financial-Deterioration-Dashboard in Power BI) für politische Handlungsempfehlungen],
     [Projekt(e): LSI Early Warning System für Fälle finanzieller Verschlechterung mittels Boosted Trees (Azure ML), LSI-Profitabilitäts-Deep-Dive, LSI-Liquidity-Funding-Plan-Bewertungen],
-    ref-line("ecb_current"),
   ),
 )
 
@@ -69,7 +68,6 @@
     [Institutional-Disruption-Team, Entwicklung von ML-Modellen zur Vorhersage politischer Gewalt und Vertreibung mittels NLP-Pipelines für das Auswärtige Amt],
     [Refactoring und Neuentwicklung der ML-Infrastruktur, Implementierung von MLOps-Pipelines mit MLflow und Prefect für automatisiertes Modelltraining und -deployment, Sicherstellung von Reproduzierbarkeit und Versionskontrolle für die Forschung, Verbesserung der Laufzeiten von 2 Tagen auf 1 Stunde],
     [Barcelona School of Economics: Teaching Assistant für einen Master-Kurs in Volkswirtschaftslehre],
-    ref-line("econai"),
   ),
 )
 
@@ -78,17 +76,13 @@
   location: [Frankfurt am Main, Deutschland],
 )
 #cv-entry-continued(
-  title: [Supervision Analyst],
-  date: [07/2024 -- 09/2024],
+  title: [Supervision Analyst (zuvor DG-SPL/ISO-Trainee)],
+  date: [07/2023 -- 09/2024],
   description: bullets(
     [Institutionelle und sektorale Aufsicht, Identifikation von Hochrisiko- und Hochimpact-Banken, Code-Migration (von SAS zu Python \& SQL) und Optimierung, Aufbau des GitLab der Abteilung],
     [Entwicklung \& Verbesserung von Datenextraktions-Pipelines aus Enterprise-Data-Lakes (Python, SQL, VBA, Excel-Datenmodell), Verbesserung der Berechnungszeiten um bis zu 300\%],
     [Projekt(e): Optimierung eines BERT-Modells zur Identifikation von Cyberrisiken (PyTorch, LangChain), Entwicklung der LSI-SREP-Dateninfrastruktur zur Konsolidierung von vier Quellsystemen über 3.000 SSM-Banken seit 2014 mittels Python, SQL \& Excel mit 20 Millionen Datenpunkten (quartalsweise wachsend)],
   ),
-)
-#cv-entry-continued(
-  title: [DG-SPL/ISO-Trainee],
-  date: [07/2023 -- 06/2024],
 )
 
 #cv-entry(

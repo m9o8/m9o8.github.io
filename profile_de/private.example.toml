@@ -5,10 +5,13 @@
 # Nur relevant für den lokalen Build:
 #   typst compile cv.typ --input profile=de --input variant=private --font-path assets/fonts output/cv-de-full.pdf
 
+# Bewusst kein `location`-Feld: eine Straßenadresse bringt für ATS-Matching
+# nichts und ist unnötige PII -- beide PDF-Varianten nutzen daher den
+# City-only-Wert aus metadata.toml. Nur bei Bedarf ergänzen.
+
 [info]
     email = "du@beispiel.de"
     phone = "+00 000 0000000"
-    location = "Straße, PLZ Stadt"
 
 [[references]]
     key = "ecb_current"

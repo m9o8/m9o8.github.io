@@ -6,8 +6,10 @@
 #   typst compile cv.typ --input variant=private --font-path assets/fonts output/cv-en-full.pdf
 #
 # [info] fields are merged over profile_en/metadata.toml's [personal.info]
-# for the full PDF (email/phone are added, location overrides the public
-# city-only value with the real street address).
+# for the full PDF (email/phone are added). Deliberately no `location` here:
+# a street address adds nothing for ATS matching and is PII the CV doesn't
+# need, so both PDF variants keep the city-only location from metadata.toml.
+# Only add one if you specifically need it.
 #
 # [[references]] entries are looked up by `key` from profile_en/professional.typ
 # and only rendered when variant = "private".
@@ -15,7 +17,6 @@
 [info]
     email = "you@example.com"
     phone = "+00 000 0000000"
-    location = "Street, ZIP City"
 
 [[references]]
     key = "ecb_current"
