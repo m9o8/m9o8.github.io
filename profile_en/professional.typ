@@ -53,9 +53,9 @@
   date: [01/2026 -- ongoing],
   location: [Frankfurt am Main, Germany],
   description: bullets(
-    [Strategic Team, responsible for all data, quality assurance, and analytic insights across SSM Less Significant Institutions (1,800 institutions)],
-    [Development of data visualization tools for (public) banking statistics (e.g. Outlier Monitoring in Tableau, Financial Deterioration dashboard in Power BI, quarterly public LSI statistics)],
-    [Project(s): LSI Early Warning System for Financial Deterioration cases using boosted trees (Azure ML), LSI Profitability deep dive, LSI IT Risk],
+    [Strategic Team: own data quality, analytics, and reporting across 1,800 SSM Less Significant Institutions, incl. drafting the "Structure of the LSI sector" chapter of the SSM supervision report & quarterly public LSI statistics],
+    [Migrated dashboards and data infrastructure from Excel to SQL/Python (Power BI, Tableau, Pandas to Polars)],
+    [Project(s): *RWA/CET1 capital impact* simulation tool for proposed risk-weighting simplifications #h-bar() *USD devaluation exposure* on LSI USD positions #h-bar() *LSI profitability deep-dive* #h-bar() LSI IT risk monitoring],
     ref-line("ecb_current"),
   ),
 )
@@ -66,10 +66,21 @@
   date: [08/2025 -- 12/2025],
   location: [Barcelona, Spain],
   description: bullets(
-    [Institutional disruption team, building ML models predicting political violence using NLP pipelines for the German Federal Foreign Office],
-    [Refactoring and rewriting of ML infrastructure, implementing MLOps pipelines using MLFlow and Prefect for automated model training and deployment, ensuring reproducibility and version control for research, improving runtimes from 2 days to 1 hour],
-    [Barcelona School of Economics: Teaching Assistant for a Master's-level Microeconomics course (Economics for Decion Making)],
+    [Built ML/econometric forecasting models for electoral violence & human rights violations, for the German Federal Foreign Office (Auswärtiges Amt), supervising a team of 2 working students on taxonomy design \& data labeling],
+    [Processed millions of newspaper articles via LDA topic modeling and headline-embedding/few-shot pipelines to generate national and subnational (ADM2) conflict forecasts from UCDP/ACLED data],
+    [Optimized runtimes across the stack: *MLOps pipelines* (Prefect) cut model training from 2 days to 1 hour #h-bar() *PostGIS geospatial joins* cut query time from 25 hours to 30 minutes],
+    [Infrastructure: built a Python/PostgreSQL library (Jinja templates, DuckDB) implementing SCD2 versioning for ingested articles #h-bar() open-sourced a Narwhals dataframe-interoperability layer for the panelsplit library],
     ref-line("econai"),
+  ),
+)
+
+#cv-entry(
+  title: [Teaching Assistant -- Economics for Decision Making],
+  society: [Universitat Pompeu Fabra / Barcelona School of Economics],
+  date: [09/2025 -- 12/2025],
+  location: [Barcelona, Spain],
+  description: bullets(
+    [Weekly TA sessions on Microeconomics \& Game Theory for the Data Science for Decision Making Master's (24 students)],
   ),
 )
 
@@ -86,9 +97,9 @@
   title: [Supervision Analyst],
   date: [07/2024 -- 09/2024],
   description: bullets(
-    [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established and maintained the division's GitLab],
-    [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
-    [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
+    [Institutional and sectoral oversight: identified high-risk and high-impact Less Significant Institutions through targeted risk models; managed NCA communication via a Central Notification Point & curated the divion's internal konwledge-sharing],
+    [Developed \& improved data-extraction pipelines (Python, SQL, VBA, Excel), cutting calculation time by up to 300%],
+    [Project(s): *BERT-based cyber-risk detection* POC (PyTorch, LangChain, Azure ML) #h-bar() *LSI SREP data infrastructure* consolidating 3 source systems across 3,000 SSM banks since 2014 (20M+ rows) #h-bar() *SAS to Python/SQL migration* \& GitLab maintenance],
   ),
 )
 #cv-entry-continued(
@@ -105,16 +116,15 @@
   title: [HWR: Student Research Assistant],
   date: [04/2022 -- 06/2023],
   description: bullets(
-    [Research on the impact of digitalization on financial inclusion in rural Cameroon, including fieldwork and interviews with local stakeholders, and analysis of transaction data from a blockchain-based payment system],
-    [Impact evaluation \& monitoring of the GIZ project OurVillage, implementing a blockchain-based transaction system in rural Cameroon],
-    [Project(s): researched and drafted input for a working paper (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1])  \& conference (#link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
+    [Academic monitoring \& impact evaluation for the GIZ "OurVillage" project, implementing a blockchain-based transaction system in rural Cameroon, researched and drafted input for a working paper (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1])  \& conference (#link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
   ),
 )
 #cv-entry-continued(
   title: [GIZ: ASA Scholarship -- Project: OurVillage],
   date: [09/2022 -- 12/2022],
   description: bullets(
-    [Project management, survey design, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
+    [Designed and conducted a field study (approx. 500 interviews, French \& English) evaluating blockchain-voucher adoption],
+    [Built a transaction-network visualization tool (Python: NetworkX, Plotly Dash), modeled voucher impact for stakeholder reporting],
   ),
 )
 
@@ -127,14 +137,15 @@
   title: [Finance Working Student],
   date: [01/2021 -- 03/2022],
   description: bullets(
-    [Core banking transformation program, process automation \& optimization (VBA \& SQL)],
+    [Built VBA/SQL integration frameworks for the core-banking transformation, incl. a proprietary HGB-compliant securities posting tool],
+    [Automated monthly FINREP reporting (balance sheet \& P\&L) and reconciliation using AWS, Power Query (M), VBA \& SQL],
   ),
 )
 #cv-entry-continued(
   title: [Finance Intern],
   date: [07/2020 -- 01/2021],
   description: bullets(
-    [Financial reporting \& forecasting (esp. balance sheet), ad-hoc reporting \& modeling],
+    [Financial reporting, reconciliation \& forecasting; mapped all Finance processes in BPMN diagrams for the core-banking migration],
   ),
 )
 
@@ -143,4 +154,7 @@
   society: [mittemitte GmbH],
   date: [07/2018 -- 08/2019],
   location: [Berlin, Germany],
+  description: bullets(
+    [Sole responsibility for Accounting \& Finance (later joined by a CFO): built the company's first budget model, led the digital migration to Datev, and managed EU (Horizon 2020) \& Investment Bank Berlin funding applications],
+  ),
 )

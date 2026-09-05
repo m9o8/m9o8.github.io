@@ -17,12 +17,22 @@
 )
 
 #cv-entry(
+  title: [Business Informatics (BSc) \& Information Systems Management (MSc), coursework -- not completed],
+  society: [TU Berlin],
+  date: [10/2021 -- 07/2024],
+  location: [Berlin, Germany],
+  description: list(
+    [GPA: 1.5 (≈ A) #h-bar() Quantitative \& CS coursework: Programming 1\&2 (Java, Scala, Haskell), Software Engineering, Databases, Operations Research, Cognitive Algorithms, Economics of Climate Change],
+  ),
+)
+
+#cv-entry(
   title: [Double Degree Program (BBA)],
   society: [EDHEC Business School],
   date: [09/2019 -- 09/2021],
   location: [Lille, France],
   description: list(
-    [Specialization: Finance -- GPA 16.05/20 (≈ A+), 2nd best IB track student (3rd \& 4th year)],
+    [Minor: Finance -- GPA 16.05/20 (≈ A+), 2nd best IB track student (3rd \& 4th year)],
   ),
 )
 
@@ -32,6 +42,6 @@
   date: [10/2017 -- 09/2021],
   location: [Berlin, Germany],
   description: list(
-    [Specialization: Finance \& Accounting -- GPA 1.4/4.0 (≈ A) #h-bar() Thesis: "#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_210.pdf")[Original Sin in the WAEMU]" -- Grade 1.0/4.0 (≈ A+), published in IPE Berlin],
+    [Minor: Finance \& Accounting -- GPA 1.4/4.0 (≈ A) #h-bar() Thesis: "#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_210.pdf")[Original Sin in the WAEMU]" -- Grade 1.0/4.0 (≈ A+), published in IPE Berlin],
   ),
 )

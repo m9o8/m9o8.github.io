@@ -43,6 +43,12 @@
 // the profile's own accent color rather than a fixed one.
 #show link: it => text(fill: rgb(metadata.layout.awesome_color), it)
 
+// Justify body text so wrapped lines in entry descriptions stretch to the
+// full column width instead of ending ragged-right wherever the last word
+// happens to land -- entries read as consistently "full-width" even though
+// the underlying content lengths vary.
+#set par(justify: true)
+
 // The header contact-info row (location, email, phone, GitHub, LinkedIn)
 // is centered under the name. This rebuilds the row's content itself
 // (rather than styling brilliant-cv's built-in row) because the package

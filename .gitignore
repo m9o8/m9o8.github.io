@@ -9,6 +9,7 @@ Current CVs/
 output/
 *.pdf
 !assets/**/*.pdf
+input/
 
 # Claude related files (local only, not committed)
 .claude/
