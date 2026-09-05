@@ -48,14 +48,14 @@
 #cv-section("Professional Experience")
 
 #cv-entry(
-  title: [Supervision Analyst],
+  title: [Supervision Analyst (DG-SPL/ISO)],
   society: [European Central Bank],
   date: [01/2026 -- ongoing],
   location: [Frankfurt am Main, Germany],
   description: bullets(
-    [DG-SPL/ISO Strategic Team, responsible for all data across the SSM LSI landscape (1,800 institutions)],
-    [Development of data visualization tools for banking statistics (e.g. Outlier Monitoring in Tableau and Financial Deterioration dashboard in Power BI) for policy recommendations],
-    [Project(s): LSI Early Warning System for Financial Deterioration cases using boosted trees (Azure ML), LSI Profitability deep dive, LSI Liquidity Funding Plan assessments],
+    [Strategic Team, responsible for all data, quality assurance, and analytic insights across SSM Less Significant Institutions (1,800 institutions)],
+    [Development of data visualization tools for (public) banking statistics (e.g. Outlier Monitoring in Tableau, Financial Deterioration dashboard in Power BI, quarterly public LSI statistics)],
+    [Project(s): LSI Early Warning System for Financial Deterioration cases using boosted trees (Azure ML), LSI Profitability deep dive, LSI IT Risk],
     ref-line("ecb_current"),
   ),
 )
@@ -86,7 +86,7 @@
   title: [Supervision Analyst],
   date: [07/2024 -- 09/2024],
   description: bullets(
-    [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established the division's GitLab],
+    [Institutional and sectoral oversight, identification of high-risk and high-impact banks, code migration (from SAS to Python \& SQL) and optimization, established and maintained the division's GitLab],
     [Developed \& improved data extraction pipelines from enterprise data lakes (Python, SQL, VBA, Excel data model), improving calculation times by up to 300%],
     [Project(s): optimized a BERT model to identify cyber risks (PyTorch, LangChain), developed the LSI SREP data infrastructure consolidating four source systems across 3,000 SSM banks since 2014 via Python, SQL \& Excel with 20 million datapoints growing quarterly],
   ),
@@ -96,23 +96,23 @@
   date: [07/2023 -- 06/2024],
 )
 
-
-#cv-entry(
-  title: [Student Research Assistant],
-  society: [HWR Berlin],
+#cv-entry-start(
+  society: [HWR Berlin / Gesellschaft für Internationale Zusammenarbeit (GIZ)],
+  location: [Berlin, Germany / Bafoussam, Cameroon],
+)
+#v(3.5pt)
+#cv-entry-continued(
+  title: [HWR: Student Research Assistant],
   date: [04/2022 -- 06/2023],
-  location: [Berlin, Germany],
   description: bullets(
+    [Research on the impact of digitalization on financial inclusion in rural Cameroon, including fieldwork and interviews with local stakeholders, and analysis of transaction data from a blockchain-based payment system],
     [Impact evaluation \& monitoring of the GIZ project OurVillage, implementing a blockchain-based transaction system in rural Cameroon],
     [Project(s): researched and drafted input for a working paper (#link("https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_209.pdf")[1])  \& conference (#link("https://ramics-sofia-2022.unwe.bg/Uploads/Conference/_RAMICS%20-Bulgaria-2022.pdf")[2])],
   ),
 )
-
-#cv-entry(
-  title: [ASA Scholarship -- Project: OurVillage],
-  society: [GIZ],
+#cv-entry-continued(
+  title: [GIZ: ASA Scholarship -- Project: OurVillage],
   date: [09/2022 -- 12/2022],
-  location: [Bafoussam, Cameroon],
   description: bullets(
     [Project management, survey design, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
   ),
