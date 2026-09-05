@@ -102,17 +102,54 @@
   align(center, text(size: font-size, info-row(metadata.personal.info)))
 }
 
+// brilliant-cv 4.1.0 stacks the header's name / contact-info / header-quote
+// rows in a table with a fixed 6mm row-gutter and no metadata override --
+// shrink that specific gap to close up the whitespace above "Education".
+// `row-gutter` isn't a field `.where()` can match on (it silently never
+// matches, even on an exact value/type copy of what `.fields()` reports),
+// so match on `columns: (1fr,)` instead -- a single 1fr column is unique to
+// this header table (every other table in the package/content uses a
+// multi-column layout) -- and rebuild it with a tighter gutter. Swapping
+// the rebuilt column spec from `1fr` to `100%` avoids the rebuilt table
+// re-matching its own selector (both fill the same single-column width, so
+// this doesn't change layout). Must run before `cv.with` below, since the
+// header itself is rendered inside that call.
+#show table.where(columns: (1fr,)): it => {
+  let f = it.fields()
+  table(
+    columns: (100%,),
+    inset: f.inset,
+    stroke: f.stroke,
+    align: f.align,
+    fill: f.fill,
+    column-gutter: f.column-gutter,
+    row-gutter: 3mm,
+    ..f.children,
+  )
+}
+
 #show: cv.with(
   metadata,
   profile-photo: none,
   header-info: centered-header-info,
 )
 
+// brilliant-cv 4.1.0 hardcodes cv-section's title at 16pt bold with no
+// metadata override, so shrink it by pattern-matching the exact text()
+// call it emits internally.
+#show text.where(size: 16pt, weight: "bold"): set text(size: 11pt)
+
 // Add, remove, or reorder modules to customize CV content.
-#import-modules((
-  "education",
-  "professional",
-  "volunteer",
-  "skills",
-  "certificates",
-))
+#[
+  // Entry society/title lines use brilliant-cv's "a1" style, also a
+  // hardcoded 10pt bold with no override -- match it down to the body
+  // font size so firm names read on par with the entries' own text.
+  // Scoped to a block rather than applied document-wide because
+  // cv-skill's type labels (Skills section) use the same 10pt/bold
+  // combination and should keep their current size.
+  #show text.where(size: 10pt, weight: "bold"): set text(
+    size: eval(metadata.layout.at("font_size", default: "9pt")),
+  )
+  #import-modules(("education", "professional", "volunteer"))
+]
+#import-modules(("skills", "certificates"))

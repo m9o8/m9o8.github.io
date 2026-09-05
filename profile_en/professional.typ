@@ -114,7 +114,7 @@
   date: [09/2022 -- 12/2022],
   location: [Bafoussam, Cameroon],
   description: bullets(
-    [Project management, survey design \& implementation, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
+    [Project management, survey design, interviews, transaction \& socio-economic data analysis and visualization (Power BI, Python)],
   ),
 )
 
